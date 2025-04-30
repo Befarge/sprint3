@@ -65,6 +65,8 @@ public class Main {
         }
 
         // сгенерируйте комбинации блюд и выведите на экран
-        System.out.println(dc.comboOfDishes(dishesOfTypes, numberOfCombos));
+        for (ArrayList<String> combination : dc.comboOfDishes(dishesOfTypes, numberOfCombos)) {
+            System.out.println(combination);
+        }
     }
 }
